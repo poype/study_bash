@@ -20,3 +20,8 @@ echo $message3    # message1 value is Hello World!
 # 单引号中的【$】就是普通字符
 message4='message2 value is not $message2'
 echo $message4    # message2 value is not $message2
+
+# 使用反斜杠【\】将空格、Enter、$等变为普通字符
+paragraph1=first\ second\ \$third
+echo $paragraph1  # first second $third
+
