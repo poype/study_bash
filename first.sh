@@ -25,3 +25,8 @@ echo $message4    # message2 value is not $message2
 paragraph1=first\ second\ \$third
 echo $paragraph1  # first second $third
 
+dir=`ls ~`
+echo $dir         # Desktop Documents Downloads Music Pictures Public snap Templates Videos Workspace
+
+dir2=$(ls ~)
+echo $dir2        # Desktop Documents Downloads Music Pictures Public snap Templates Videos Workspace
