@@ -42,3 +42,23 @@ echo $?           # 0
 ret=`ls ~/abc`
 echo $?           # 2
 
+
+# declare声明变量的类型
+# declare [-aixr] variable
+# -a array
+# -i integer
+# -x export，将后面的变量定义为环境变量
+# -r readonly，设置变量不可被更改内容，也不能unset
+sum=100+300+500
+echo $sum          # 100+300+500
+
+declare -i sum=100+300+500
+echo $sum          # 900
+
+declare -a list
+list[1]=one
+list[2]=two
+list[3]=three
+echo ${list[1]}    # one
+echo ${list[2]}    # two
+echo ${list[3]}    # three
