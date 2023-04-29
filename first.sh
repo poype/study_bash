@@ -34,3 +34,11 @@ echo $dir2        # Desktop Documents Downloads Music Pictures Public snap Templ
 # unset 取消一个变量
 unset dir
 echo $dir
+
+# ? 也代表一个变量，是上一条命令执行的返回值，0表示成功，非0表示失败
+ret=`ls ~`
+echo $?           # 0  
+
+ret=`ls ~/abc`
+echo $?           # 2
+
