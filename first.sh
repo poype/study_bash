@@ -30,3 +30,7 @@ echo $dir         # Desktop Documents Downloads Music Pictures Public snap Templ
 
 dir2=$(ls ~)
 echo $dir2        # Desktop Documents Downloads Music Pictures Public snap Templates Videos Workspace
+
+# unset 取消一个变量
+unset dir
+echo $dir
