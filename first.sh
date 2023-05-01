@@ -62,3 +62,8 @@ list[3]=three
 echo ${list[1]}    # one
 echo ${list[2]}    # two
 echo ${list[3]}    # three
+
+# typeset与declare的作用是一样的，都是声明一个变量的类型
+typeset -i result
+result=20000-1000  # 19000
+echo $result
