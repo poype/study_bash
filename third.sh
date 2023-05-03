@@ -25,3 +25,25 @@
 # test -n string  判断字符串是否为非空串
 # test str1 == str2
 # test str1 != str2
+
+# 中括号 [] 和 test 表达式的作用相同
+# 要注意中括号的两端需要使用空格分隔，而且下方“==”两边也必须要有空格
+if [ "$1" == "one" ]; then
+    echo "you input one"
+fi
+
+if [ "$1" == "one" ]; then
+    echo "what you input is one"
+else
+    echo "what you input is not one"
+fi
+
+if [ "$1" == "one" ]; then
+    echo "what you input is really one"
+elif [ "$1" == "two" ]; then
+    echo "what you input is really two"
+elif [ "$1" == "three" ]; then    
+    echo "what you input is really three"
+else
+    echo "what you input is not one, two and three"
+fi
